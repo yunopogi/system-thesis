@@ -1,0 +1,160 @@
+/* Reset + Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #1a1a1a;
+}
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #696341;
+  color: white;
+  padding: 1rem;
+}
+
+.sidebar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.sidebar .submenu {
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  color: #d6d6bc;
+}
+
+/* Main Content */
+.dashboard-main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.dashboard-main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Explore Species */
+.explore {
+  margin-top: 1rem;
+}
+
+.species-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.species-icons img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.access {
+  background-color: #8e844b;
+  color: white;
+  padding: 10px;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.card {
+  flex: 1;
+  background-color: #e4dfc2;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  background-color: #4d4d2e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* Right Panel */
+.dashboard-right {
+  width: 220px;
+  padding: 1.5rem;
+  background-color: #f3efe0;
+}
+
+.catalog {
+  background-color: #d9d1b3;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.catalog button {
+  margin-top: 10px;
+  background-color: #5a5a35;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.comparison {
+  margin-top: 2rem;
+}
+
+.comparison h5 {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comparison ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comparison li {
+  background-color: #d4d4bc;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}

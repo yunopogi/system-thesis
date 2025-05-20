@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BioGuard Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body class="dashboard-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🌲 BioGuard</div>
+    <ul>
+      <li>Home</li>
+      <li>Species</li>
+      <ul class="submenu">
+        <li>Animal list</li>
+        <li>Plant list</li>
+      </ul>
+      <li>Data entries</li>
+      <li>Researchers</li>
+      <li>Observations</li>
+      <li>Reports</li>
+    </ul>
+  </aside>
+
+  <!-- Main Dashboard Content -->
+  <main class="dashboard-main">
+    <header>
+      <h1>Welcome to <strong>BioNet</strong>, User!</h1>
+      <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+    </header>
+
+    <section class="explore">
+      <h4>Explore species diversity</h4>
+      <div class="species-icons">
+        <img src="https://via.placeholder.com/60" alt="Species 1">
+        <img src="https://via.placeholder.com/60" alt="Species 2">
+        <img src="https://via.placeholder.com/60" alt="Species 3">
+        <img src="https://via.placeholder.com/60" alt="Species 4">
+        <div class="access">Access</div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>🗃️ Data Analysis</h3>
+        <p>Analyze biodiversity metrics with ease.</p>
+        <button>Analyze data</button>
+      </div>
+      <div class="card">
+        <h3>🪴 Botanical Records</h3>
+        <p>Record new findings</p>
+        <button>Add entry</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Right Sidebar -->
+  <aside class="dashboard-right">
+    <div class="catalog">
+      <h4>Species Catalog</h4>
+      <p>Record observations for biodiversity preservation.</p>
+      <button>Enter data</button>
+    </div>
+
+    <div class="comparison">
+      <h5>Data comparison <span class="view-all">VIEW ALL</span></h5>
+      <ul>
+        <li><span>Over</span> <strong>Species</strong> <span>2398</span></li>
+        <li><span>Over</span> <strong>Botanist</strong> <span>2019</span></li>
+        <li><span>Detail</span> <strong>Gardener</strong> <span>1832</span></li>
+        <li><span>Top</span> <strong>Your</strong> <span>420</span></li>
+      </ul>
+    </div>
+  </aside>
+
+</body>
+</html>

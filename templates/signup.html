@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BioGuard Registration</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='LogSign.css') }}">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo-section">
+      <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2L4 5v6c0 5.25 3.25 10.74 8 12 4.75-1.26 8-6.75 8-12V5l-8-3z" />
+      </svg>
+      <h1 class="logo-text">BioGuard</h1>
+    </div>
+
+    <h2 class="heading">Join the BioGuard Community</h2>
+    <p class="subheading">Access exclusive features for biodiversity monitoring.</p>
+
+    <!-- SIGNUP FORM -->
+    <form action="{{ url_for('signup') }}" method="POST">
+      <div class="input-group">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Your full name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Your unique username" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Create password" required />
+      </div>
+
+      <div class="input-group">
+        <label for="confirm_password">Confirm Password</label>
+        <input id="confirm_password" name="confirm_password" type="password" placeholder="Repeat password" required />
+      </div>
+
+      <button type="submit" class="btn-login">Sign Up</button>
+    </form>
+
+    <div class="social-section">
+      <p>or sign in with</p>
+      <div class="social-buttons">
+        <button class="btn-social google">Google</button>
+        <button class="btn-social facebook">Facebook</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
